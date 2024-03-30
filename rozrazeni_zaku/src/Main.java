@@ -34,7 +34,7 @@ public class Main {
             String[][] names = time.NameTime(jmena,size, time.SingleDuration(size));
             
             writeFile(names);
-            System.out.println("Seznam vytvoren.");
+            System.out.println("Seznam vytvoren do souboru seznam.txt.");
         }
 
 
