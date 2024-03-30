@@ -32,11 +32,7 @@ public class Main {
             int size = getNames(file).size();
             List<String> jmena = RozradJmena(getNames(file));
             String[][] names = time.NameTime(jmena,size, time.SingleDuration(size));
-            /* System.out.println(RozradJmena(getNames(file)));
-        System.out.println(time.SingleDuration(getNames(file).size()));
-        for(int i = 0; i < names.length; i++){
-            System.out.println(names[i][0] + " cas " + names[i][1]);
-        }*/
+            
             writeFile(names);
             System.out.println("Seznam vytvoren.");
         }
@@ -95,24 +91,7 @@ public class Main {
         }
     }
 
-    /*public static void writeNames(String[][] seznam){
-        try{
-
-        }catch (){
-
-        }
-    }*/
+    
 
 }
 
-/*
- * aplikace pro seznam jmen, cas hodiny, nahodne rozrazeni, ke kazdemu zakovi napise cas od kdy do kdy bude zkouseny, propocita to podle zadani od kdy do kdy je vyuka,
- * zadat start a konec cas, zadat format casu, osetrit
- *
- * postup:
- * sehnat format casu a vypocitat minuty
- * vytvorit soubor s jmeny
- * metoda pro vypocet zaku
- * input na nazev souboru
- * vytvoreni noveho souboru kde se vse vypise
- * */
